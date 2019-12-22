@@ -1,0 +1,25 @@
+type TMApplication 
+  @model {
+  id: ID!
+  name: String!
+  description: String
+  target: String!
+  icon: String
+  linkType: LinkType!
+  requiresElevatedPrivledges: Boolean!
+}
+
+type TMAppGroup
+  @model {
+  id: ID!
+  name: String!
+  application: [TMApplication]
+}
+
+enum LinkType {
+  application
+  url
+  folder
+}
+
+
