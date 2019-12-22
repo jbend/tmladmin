@@ -13,3 +13,4 @@ npm add @aws-amplify/cli
 * amplify add analytics
 * amplify add api
 
+npm install aws-amplify aws-amplify-angular
